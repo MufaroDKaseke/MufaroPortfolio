@@ -1,0 +1,121 @@
+/* Home Page */
+
+
+/* Latest Blog Post  Section */
+
+.blog .single-entry {
+  margin-bottom: 3rem;
+}
+
+.blog .single-entry .card-top {
+  position: relative;
+}
+
+.blog .single-entry .card-img-top {
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.blog .single-entry .date {
+  box-shadow: 0 3px 5px #dad8d8;
+  color: #fff;
+  padding: .75rem .5rem;
+  font-size: .75rem;
+  background: #dc3545;
+  border-radius: 10px;
+  position: absolute;
+  bottom: -18px;
+  right: 1rem;
+}
+
+/*.blog .single-entry.full .date {
+  padding: 1rem;
+  font-size: 16px;
+  bottom: -24px;
+}
+*/
+
+.blog .single-entry .card-body {}
+
+
+.blog .single-entry .card-title {
+  color: #000;
+  font-weight: 600;
+  margin: 1rem auto;
+}
+
+.blog .single-entry .card-title:hover {
+  color: #dc3545;
+  transition: all 0.5s ease;
+}
+
+.blog .single-entry .card-text {
+  display: inline-block;
+  font-size: .8rem;
+}
+
+.blog .single-entry ul {
+  align-items: center;
+}
+
+.blog .single-entry li {}
+
+.blog .single-entry li a {
+  font-size: 13px;
+  color: #000;
+}
+
+.blog .single-entry li a:hover {
+  color: #dc3545;
+  transition: all .5s ease;
+}
+
+.blog .single-entry li:first-of-type a {
+  /*color: #dc3545;*/
+}
+
+.blog .single-entry li a i {
+  margin-right: .25rem;
+}
+
+
+/* Lower Than 576px potrait phone and very small devices , Extra Small */
+
+@media only screen and (max-width: 576px) {
+
+  .blog .single-entry .date {
+    padding: .5rem;
+    font-size: .75rem;
+    bottom: -18px;
+  }
+
+  .blog .single-entry .card-title {
+    font-size: 1rem;
+  }
+
+  .blog .single-entry .card-text {
+    font-size: .75rem;
+  }
+
+  .blog .single-entry li a {
+    font-size: 12px;
+  }
+}
+
+/* Lower Than 768px landscape phone and small devices  , Small 575px - 768px */
+
+@media only screen and (min-width: 575.98px) and (max-width: 768.98px) {
+
+}
+
+/* Lower Than 992px tablets , Medium 767px - 992px*/
+
+@media only screen and (min-width: 767.98px) and (max-width: 991.98px) {
+}
+
+/* Lower Than 1200px tablets , Large  991px - 1200px*/
+
+@media only screen and (min-width: 991.98px) and (max-width: 1200px) {
+}
+
+/* No media query for devices more than 1200px is in here , >1200px devices are found in  (style.css) */

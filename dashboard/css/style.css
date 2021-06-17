@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+/* General */
+
+::root {
+  
+}
+
+*{}
+
+*::selection {
+  background: #000;
+  color: #fff;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: gray;
+  display: flex;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h1 ,h2 ,h3 ,h4 ,h5 {
+  color: #394a6d;
+}
+
+
+/* Page */
+
+.page-head {
+}
+
+.page-head h3 {
+}
+
+.page-head .breadcrumb {
+  background: transparent;
+}
+
+.page-head .breadcrumb a {
+  color: #dc3545;
+}
+
+.page-head .breadcrumb a:hover {
+  color: #bd2130;
+}
+
+/* Card Panel */
+
+.card-panel {}
+
+.card-panel > .card {
+  margin-bottom: 2rem;
+}
+
+.card-panel > .card .card-header {
+  background: transparent;
+  padding: .7rem .5rem .7rem 1.25rem; 
+}
+
+.card-panel > .card .card-title {
+  color: #394a6d;
+}
+
+.card-panel > .card .card-tools {
+  float: right;
+}
+
+.card-panel > .card .card-tools li {
+  margin: auto .25rem;
+}
+
+.card-panel > .card .card-tools a {
+  color: #7f7f7f;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.card-panel > .card .card-tools a:hover {
+  cursor: pointer;
+  color: #dc3545;
+  background: #e9ecef;
+}
+
+
+
+.card-panel > .card .card-body {
+}
+
+.card-panel > .card.open .card-body {
+}
+
+/* Login Page */
+
+.login {}
+
+.login .row {
+  min-height: 100vh;
+}
+
+.login .img-container {
+
+}
+
+.login .img-container img {
+  width: 100%;
+}
+
+.login .form-container .input-group {
+  border-bottom: 2px solid #000;
+}
+
+.login .form-container .input-group .input-group-text {
+  width: 40px;
+  display: block;
+  border: none;
+  background: transparent;
+  text-align: center;
+  font-size: 20px;
+}
+
+.login .form-container .input-group .form-control {
+  border :none;
+  font-weight: 400;
+  background: transparent;
+}
+
+.login .form-container .input-group .form-control:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.login .form-container .input-group label.error {
+  position: absolute;
+  right: 0;
+  color: red;
+  font-size: 0.75rem;
+}
+
+.login .form-container button[type=submit] {
+  border-radius: 30px !important;
+  padding: 0.5rem 1.2rem;
+  background: #dc3545;
+  color: #fff;
+}
+
+.login .form-container .forgot-password {
+
+}
+
+.login .forgot-password > a {
+  color: #dc3545;
+}
+
+
+/* Dashbaord Index page */
+
+.sidebar {
+  width: 250px;
+  min-height: 100vh;
+  background-color:#343a40;
+  box-shadow: 0 14px 28px rgba(0,0,0,.25),0 10px 10px rgba(0,0,0,.22) !important;
+  z-index: 4000;
+}
+
+.sidebar.sidebar-sm {
+  width: unset;
+  transition: width 0.25s ease; /* Not working when using `width = unset` */
+}
+
+.sidebar.sidebar-sm:hover {
+  width: 300px;
+}
+
+.sidebar .sidebar-brand {
+  padding: 0.25rem;
+  border-bottom: 1px solid #4b545c;
+}
+
+.sidebar .sidebar-brand .logo {
+  width: 35px;
+}
+
+.sidebar .sidebar-brand h5 {
+  color: #fff;
+}
+
+.sidebar.sidebar-sm .sidebar-brand h5 {
+  display: none;
+}
+.sidebar.sidebar-sm:hover .sidebar-brand h5 {
+  display: block;
+}
+
+.sidebar .sidebar-brand h5 > span {
+  color: #dc3545;
+}
+
+.sidebar .sidebar-nav {
+}
+
+.sidebar .sidebar-nav .nav {
+  display: block;
+}
+
+.sidebar .sidebar-nav .nav .nav-item {
+  padding: 0 5px;
+  display: block;
+  margin: 5px 0;
+}
+
+.sidebar .sidebar-nav .nav .nav-item a {
+  padding: .5rem 1rem;
+  color: #c2c7d0;
+  background-color: transparent;
+  border-radius: 5px;
+  white-space: nowrap;
+}
+
+.sidebar .sidebar-nav .nav .nav-item a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.sidebar .sidebar-nav .nav .nav-item.active a {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #fff;
+}
+
+.sidebar .sidebar-nav .nav .nav-item a > span {
+  position: relative;
+  top: -2px;
+  margin: auto 10px;
+  font-size: 0.9rem;
+}
+
+.sidebar .sidebar-nav .nav .nav-item a i {
+  font-size: 1.4rem;
+  line-height: unset;
+}
+
+
+.sidebar.sidebar-sm .sidebar-nav .nav .nav-item a {
+  text-align: center;
+}
+
+.sidebar.sidebar-sm:hover .sidebar-nav .nav .nav-item a {
+  text-align: left;
+}
+
+
+.sidebar.sidebar-sm .sidebar-nav .nav .nav-item a > span {
+  display: none;
+}
+
+.sidebar.sidebar-sm:hover .sidebar-nav .nav .nav-item a > span {
+  display: inline;
+}
+
+.sidebar.sidebar-sm .sidebar-nav .nav .nav-item a i {
+  /*font-size: 1.5rem;*/
+}
+
+.sidebar.sidebar-sm:hover .sidebar-nav .nav .nav-item a i {
+  font-size: 1.4rem;
+}
+
+.sidebar .sidebar-nav .nav-item.menu {}
+
+.sidebar .sidebar-nav .nav-item.menu > a {
+  white-space: nowrap;
+}
+
+.sidebar .sidebar-nav .nav-item.menu.menu-open > a {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #fff;
+}
+
+.sidebar .sidebar-nav .nav-item.menu > a i:last-of-type {
+  font-size: 1rem !important;
+  float: right;
+  position: relative;
+  top: 5px;
+  white-space: nowrap;
+}
+
+.sidebar.sidebar-sm .sidebar-nav .nav-item.menu > a i:last-of-type {
+  display: none;
+}
+
+.sidebar.sidebar-sm:hover .sidebar-nav .nav-item.menu > a i:last-of-type {
+  display: unset;
+}
+
+.sidebar .sidebar-nav .nav-item.menu .menu-container {
+  border-left: 1px solid #fff;
+  margin-left: 1rem;
+  display: none;
+}
+
+.sidebar .sidebar-nav .nav-item.menu.menu-open .menu-container {
+  display: block;
+}
+
+
+.sidebar .sidebar-nav .nav-item.menu .menu-container .nav-item a {
+  font-size :0.8rem;
+}
+
+/* Main Content */
+
+.main-content {
+  width: 100%;
+  background-color:#f4f6f9;
+}
+
+.main-content .main-header {
+  width: 100%;
+  background: #fff;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.main-content .main-header .navbar-nav .pushmenu {
+  font-weight: 900;
+  font-size: 1.12rem;
+  padding: 5px;
+}
+
+  /* Search Form */
+
+.main-content .main-header .input-group {
+  border-radius: 0.2rem;
+  background: #f2f4f6;
+}
+
+.main-content .main-header .input-group input {
+  background: transparent;
+  border: none;
+  border-top-left-radius: .2rem;
+  border-bottom-left-radius: .2rem;
+}
+
+.main-content .main-header .input-group button[type=submit] {
+  color: rgba(0, 0, 0, 0.6);
+  border-top-right-radius: .2rem;
+  border-bottom-right-radius: .2rem;
+}
+
+.main-content .main-header .input-group input:focus {
+  box-shadow: none;
+}
+
+.main-content .main-header .input-group button[type=submit]:focus {
+  box-shadow: none;
+}
+
+.main-content .main-header .input-group:focus-within {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.main-content .main-header .input-group:focus-within button[type=submit] {
+  color: #000000;
+}
+
+  /* Dropdowns */
+
+.main-content .main-header li.dropdown {
+  margin: auto 1rem;
+}
+
+.main-content .main-header li.dropdown a[data-toggle=dropdown] > .badge {
+  position: absolute;
+  right: -2px;
+  top: 3px;
+  font-size: 0.6rem;  
+}
+
+.main-content .main-header li.dropdown .dropdown-menu {
+  border: 1px solid #dfdfdf;
+  width: 300px;
+  padding: 5px;
+}
+
+.main-content .main-header li.dropdown .dropdown-item {
+  background: #f4f6f9;
+  margin: 5px auto;
+}
+
+.main-content .main-header li.dropdown .dropdown-footer {
+  font-size: 13px;
+}
+
+.main-content .main-header li.messages-dropdown {}
+
+.main-content .main-header li.messages-dropdown .dropdown-divider {
+  /*margin :0.1rem 0;*/
+}
+
+.main-content .main-header li.messages-dropdown .dropdown-item {
+}
+
+.main-content .main-header li.messages-dropdown .dropdown-item-header {
+  margin-bottom: 3px;
+}
+
+.main-content .main-header li.messages-dropdown .dropdown-item-title {
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+.main-content .main-header li.messages-dropdown .dropdown-item-header > span {
+  font-weight: 700;
+  font-size: 11px;
+  font-style: italic;
+}
+
+.main-content .main-header li.messages-dropdown .msg {
+  font-size: 13px;
+  white-space: normal;
+  margin-bottom: 0;
+}
+
+.main-content .main-header li.messages-dropdown .dropdown-footer {
+}
+
+.main-content .main-header li.ntfn-dropdown {}
+.main-content .main-header li.ntfn-dropdown .dropdown-item > span {
+  font-size: 11px;
+}
+
+.main-content .main-header li.user-dropdown {}
+.main-content .main-header li.user-dropdown .dropdown-menu {
+  width: unset;
+  padding: unset;
+}
+.main-content .main-header li.user-dropdown img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+
+.main-content .main-header li.user-dropdown .dropdown-item {}
+.main-content .main-header li.user-dropdown .dropdown-item > i {
+  font-size: 16px;
+}
+
+
+.main-content main {
+  padding : 2rem;
+  overflow-y: auto;
+}
+
+
+/* Summernote Custom */
+
+.note-editor .note-editable {
+  height: 500px;
+}

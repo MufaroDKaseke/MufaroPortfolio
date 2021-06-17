@@ -1,0 +1,176 @@
+/* Projects */
+
+.projects-single {}
+
+.projects-single #projects-carousel {
+  padding-bottom: 50px;
+}
+
+.projects-single #projects-carousel .carousel-indicators {
+  /*bottom: -40px;*/
+}
+
+.projects-single #projects-carousel .carousel-indicators li {
+  background-color: #cecccc;
+  border-radius: 50%;
+  border: 2px solid #cecccc;
+  height: 7px;
+  width: 7px;
+}
+
+.projects-single #projects-carousel .carousel-indicators li.active {
+  border :2px solid #dc3545;
+}
+
+.projects-single #projects-carousel .carousel-item {
+  /*width: 100%;*/
+}
+
+.projects-single #projects-carousel .carousel-item img {
+  display: block;
+  width: 100%;
+}
+
+.projects-single .project-details {
+}
+
+.projects-single .project-details h3 {
+  font-weight: 600;
+  padding-bottom: .5rem;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.projects-single .project-details h3:after {
+  background-color: #dc3545;
+  content: '';
+  height: 3px;
+  position: absolute;
+  width: 100px;
+  left: 0;
+  bottom: 0;
+}
+
+.projects-single .project-details p {
+  font-size: 15px;
+  margin-bottom: 2rem;
+}
+
+.projects-single .project-details .project-date,
+.projects-single .project-details .project-type {
+  font-size: 14px;
+  font-weight: 5000;
+}
+
+.projects-single .project-details .project-date i,
+.projects-single .project-details .project-type i {
+  color: #dc3545;
+}
+
+
+/* Fullview Div */
+
+#projects-fullview {
+  background: rgba(0, 0, 0, .7);
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: 1040;
+  top: 0;
+  left: 0;
+  align-items: center;
+  justify-content: space-between;
+  display: none;
+}
+
+#projects-fullview.show {
+  display: block;
+}
+
+#projects-fullview .carousel-inner {
+  width: 80%;
+  height: 100vh;
+  margin: 5px auto;
+  display: flex;
+  align-items: center;
+}
+
+#projects-fullview .carousel-item {
+  max-width: 90%;
+  max-height: 90%;
+  margin: 0 auto;
+}
+
+#projects-fullview .carousel-item img {
+  /*width: 100%;
+  height: 100%;*/
+}
+
+#projects-fullview .carousel-control-prev,
+#projects-fullview .carousel-control-next {
+  width: 10%;
+  font-size: 2rem;
+}
+
+#projects-fullview .carousel-control-prev:hover,
+#projects-fullview .carousel-control-next:hover {
+  color: #dc3545;
+  transition: all .5s ease;
+}
+
+#projects-fullview .carousel-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  color: #fff;
+  z-index: 1041;
+}
+
+#projects-fullview .carousel-close:hover {
+  color: #dc3545;
+  transition: all .5s ease;
+  cursor: pointer;
+}
+
+
+
+
+/* Lower Than 576px potrait phone and very small devices , Extra Small */
+
+@media only screen and (max-width: 576px) {
+
+  .projects-single .project-details h3 {
+    font-size: 1.25rem;
+  }
+
+  .projects-single .project-details p {
+    font-size: 13px;
+  }
+
+  .projects-single .project-date {
+    font-size: 13px;
+  }
+
+  .projects-single .project-type {
+    font-size: 13px;
+  }
+
+}
+
+/* Lower Than 768px landscape phone and small devices  , Small 575px - 768px */
+
+@media only screen and (min-width: 575.98px) and (max-width: 768.98px) {
+
+}
+
+/* Lower Than 992px tablets , Medium 767px - 992px*/
+
+@media only screen and (min-width: 767.98px) and (max-width: 991.98px) {
+}
+
+/* Lower Than 1200px tablets , Large  991px - 1200px*/
+
+@media only screen and (min-width: 991.98px) and (max-width: 1200px) {
+}
+
+/* No media query for devices more than 1200px is in here , >1200px devices are found in  (style.css) */

@@ -1,0 +1,80 @@
+/* Mufaro Portfolio(dashboard) Responsive Stylesheet */
+
+/* Author : Mufaro Kaseke */
+
+/* Lower Than 576px potrait phone and very small devices , Extra Small */
+
+@media only screen and (max-width: 576px) {
+
+  .login {}
+
+  .login .img-container {}
+
+  .login .img-container > img {
+    opacity: 0.5;
+  }
+
+  .login .form-container {
+    position: absolute;
+  }
+
+  #index .sidebar {
+    position: fixed;
+    display: none;
+  }
+
+  #index .sidebar.sidebar-sm {
+    display: block;
+  }
+
+  #index .sidebar.sidebar-sm:hover {
+  width: 250px;
+}
+
+  #index .main-content {
+  }
+
+  #index .main-content .main-header {
+    padding-right: 5px;
+  }
+
+  #index .main-content .main-header li.dropdown {
+    margin: auto 0.25rem;
+  }
+
+}
+
+/* Lower Than 768px landscape phone and small devices  , Small 575px - 768px */
+
+@media only screen and (min-width : 575.98px) and (max-width: 768.98px) {
+
+  .login {}
+
+  .login .row {
+    padding: 0 7rem;
+  }
+
+  .login .img-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .login .img-container > img {
+    width: 75%;
+  }
+
+}
+
+/* Lower Than 992px tablets , Medium 767px - 992px*/
+
+@media only screen and (min-width :  767.98px) and (max-width: 991.98px) {
+
+}
+
+/* Lower Than 1200px tablets , Large  991px - 1200px*/
+
+@media only screen and (min-width : 991.98px) and (max-width: 1200px) {
+  
+}
+
+/* No media query for devices more than 1200px is in here , >1200px devices are found in  (style.css) */

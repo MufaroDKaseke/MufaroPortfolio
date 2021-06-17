@@ -1,0 +1,27 @@
+/* About-Me */
+
+
+/* Lower Than 576px potrait phone and very small devices , Extra Small */
+
+@media only screen and (max-width: 576px) {
+
+
+}
+
+/* Lower Than 768px landscape phone and small devices  , Small 575px - 768px */
+
+@media only screen and (min-width: 575.98px) and (max-width: 768.98px) {
+
+}
+
+/* Lower Than 992px tablets , Medium 767px - 992px*/
+
+@media only screen and (min-width: 767.98px) and (max-width: 991.98px) {
+}
+
+/* Lower Than 1200px tablets , Large  991px - 1200px*/
+
+@media only screen and (min-width: 991.98px) and (max-width: 1200px) {
+}
+
+/* No media query for devices more than 1200px is in here , >1200px devices are found in  (style.css) */

@@ -1,0 +1,255 @@
+/* Mufaro Portfolio Responsive Stylesheet */
+
+/* Author : Mufaro Kaseke */
+
+/* Lower Than 576px potrait phone and very small devices , Extra Small */
+
+@media only screen and (max-width: 576px) {
+  section {
+    margin-bottom: 5rem;
+  }
+
+  .section-heading {
+    margin-bottom: 2.5rem;
+  }
+
+  .section-heading h2 {
+    font-size: 2rem !important;
+    text-align: center;
+  }
+
+  .section-heading:after {
+    left: calc(50% - 50px);
+  }
+
+  section .container .row > div {
+    padding: 1.5rem;
+  }
+
+  .breadcrumbs {
+    background-position-y: 75%;
+  }
+
+  .form-control {
+    margin-bottom: 5px;
+  }
+
+  .navbar .navbar-brand {
+    color: transparent;
+  }
+
+  .navbar.header-fixed .navbar-brand {
+    color: transparent;
+  }
+
+  .navbar .navbar-brand span {
+    color: transparent;
+  }
+
+  .breadcrumbs .breadcrumb {
+    font-size: 14px;
+  }
+
+  .hero {
+    background-position: 75%;
+  }
+
+  .hero h1 {
+    font-size: 1.75rem;
+  }
+
+  .hero h2 {
+    font-size: 1.25rem;
+  }
+
+  .hero .social a {
+    font-size: 1.1rem;
+  }
+
+  .hero .scroll-down {
+    padding: 0.5rem 0.25rem;
+  }
+
+  .hero .scroll-down > i {
+    font-size: 0.75rem;
+  }
+
+  .about-me #profile {
+    margin: 0;
+  }
+
+  .about-me #profile .w-100 div a > h4 {
+    font-size: 2rem;
+  }
+
+  .about-me #profile .w-100 div a > h6 {
+    font-weight: 600;
+    font-size: 1rem;
+  }
+
+  .about-me #profile .w-100 .img-container > img {
+    margin-top: 2rem;
+    margin-bottom: 5px;
+  }
+
+  .about-me #about h2 {
+    font-size: 1.25rem;
+  }
+
+  .about-me #about h4 {
+    font-size: 0.9rem;
+  }
+
+  .about-me #about p {
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+  }
+
+  .about-me #about ul.more-details li {
+    font-size: 0.8rem;
+  }
+
+  .about-me #about ul.more-details li {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .skills .panel {
+    padding: 1.25rem;
+  }
+
+  .services .single-service {
+    padding: 30px 15px;
+  }
+
+  .services .single-service p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .reviews #review-carousel .single-review {
+    padding: 0 3px 1rem 3px;
+  }
+
+  .reviews #review-carousel .single-review > img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .reviews #review-carousel .single-review .panel {
+    width: 100%;
+  }
+
+  .reviews #review-carousel .single-review p {
+    font-size: 0.8rem;
+  }
+
+  .contact .contact-me img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .contact .contact-me .d-flex div h4 {
+    font-size: 1rem;
+  }
+
+  .contact .contact-me .d-flex div p {
+    font-size: .8rem;
+  }
+
+  .contact .contact-me > p {
+    font-size: 0.8rem;
+  }
+
+  .contact .contact-form .row > div {
+    padding: 0 1rem 10px 1rem;
+  }
+
+  .contact .contact-form .form-control {
+    margin-bottom: 5px;
+  }
+
+  .footer .row:last-of-type div {
+    margin-bottom: 1.5rem;
+  }
+
+  #requestCall .row > div {
+    padding: 0 1rem 10px 1rem;
+  }
+
+  #hireMe .row > div {
+    padding: 0 1rem 10px 1rem;
+  }
+}
+
+/* Lower Than 768px landscape phone and small devices  , Small 575px - 768px */
+
+@media only screen and (min-width: 575.98px) and (max-width: 768.98px) {
+  section {
+    margin-bottom: 5rem;
+  }
+
+  .section-heading {
+    margin-bottom: 2.5rem;
+  }
+
+  section .container .row > div {
+    padding: 1.5rem;
+  }
+
+  .about-me #profile {
+    margin: 0;
+  }
+
+  .about-me #profile .w-100 div a > h4 {
+    font-size: 2rem;
+  }
+
+  .about-me #profile .w-100 div a > h6 {
+    font-weight: 600;
+    font-size: 1rem;
+  }
+
+  .about-me #profile .w-100 .img-container > img {
+    margin-top: 2rem;
+  }
+
+  .about-me #about ul.more-details li {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .reviews #review-carousel .single-review .panel {
+    width: 100%;
+  }
+
+  .contact .contact-form .form-control {
+    margin-bottom: 10px;
+  }
+
+  .footer .row:last-of-type div {
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* Lower Than 992px tablets , Medium 767px - 992px*/
+
+@media only screen and (min-width: 767.98px) and (max-width: 991.98px) {
+
+  .about-me #profile {
+    margin: 0;
+  }
+}
+
+/* Lower Than 1200px tablets , Large  991px - 1200px*/
+
+@media only screen and (min-width: 991.98px) and (max-width: 1200px) {
+}
+
+/* No media query for devices more than 1200px is in here , >1200px devices are found in  (style.css) */
